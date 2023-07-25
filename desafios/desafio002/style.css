@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body{
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat',Verdana, Geneva, Tahoma, sans-serif;
+}
+main{
+    background-image: linear-gradient(to right, #4122F2,#233DFC,#23B0FC);
+    height: 70vh;
+}
+main a{
+    color: white;
+    text-decoration: none;
+    
+    font-size: 14px;
+}
+main a:hover{
+    color: black;
+    font-weight: bold;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+div{
+   display: inline-block;
+  
+}
+
+div#titulo{
+    margin-top: 15px;
+    margin-left: 25px;
+    font-weight: bolder;
+    font-size: 20px;
+
+}
+div#opçoes{
+    display: flex;
+    
+}
+div#opçoes > p{
+    margin-right: 20px;
+
+}
+div.entrar > p{
+    padding:10px;
+    display: inline-block;
+    border: solid 1px white;
+    border-radius: 30%;
+}
+div.entrar#menu{
+    margin-right: 15px;
+    
+}
+section{
+    margin-left: 20px;
+}
+
+section > h1{
+    font-size: 3em;
+    
+}
+
+
+
+
