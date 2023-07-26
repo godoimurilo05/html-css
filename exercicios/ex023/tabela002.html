@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        caption{
+            background-color: lightgray;
+            padding: 10px;
+            font-weight: 700;
+            font-size: 1.2em;
+
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0px;
+            background-color: rgb(56, 56, 56);
+        }
+        thead, tfoot{
+            background-color: rgb(56, 56, 56);
+            color: white;            
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+        td,th{
+            border: 1px solid black;
+            width: 50px;
+            padding: 8px;
+        }
+        td.estado{
+            text-align: center;
+        }
+        td.população{
+            text-align: right;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA DE TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH 
+            TBODY
+                R, TD, TH 
+            TFOOT
+                TR, TD, TH 
+        EXEMPLO: TABELA DE POPULAÇÃO WIKIPEDIA
+    -->
+    <table>
+        <caption>População das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="estado">São Paulo</td>
+                <td class="população">44 420 459</td>
+                
+            </tr>
+            <tr>
+                <td class="estado">Minas Gerais
+                <td class="população">20 538 718</td>
+            </tr>
+            <tr>
+                <td class="estado">Rio de Janeiro
+                    <td class="população">16 054 534</td>
+            </tr>
+            <tr>
+                <td class="estado">Bahia
+                    <td class="população">14 136 417</td>
+            </tr>
+            <tr>
+                <td class="estado">Paraná
+                    <td class="população">11 443 208</td>
+            </tr>
+            <tr>
+                <td class="estado">Rio Grande do Sul
+                    <td class="população">10 880 506</td>
+            </tr>
+            <tr>
+                <td class="estado">Pernambuco
+                    <td class="população">9 058 155</td>
+            </tr>
+            <tr> 
+                <td class="estado">Ceará
+                    <td class="população">8 791 688</td>
+            </tr>
+            <tr>
+                <td class="estado">Pará
+                    <td class="população">8 116 162</td>
+            </tr>
+            <tr>
+                <td class="estado">Santa Catarina
+                    <td class="população">7 609 601</td>
+            </tr>
+            <tr>
+                <td class="estado">Goiás
+                    <td class="população">7 055 228</td>
+            </tr>
+            <tr>
+                <td class="estado">Maranhão
+                    <td class="população">6 775 152</td>
+            </tr>
+            <tr>
+                <td class="estado">Paraíba
+                    <td class="população">3 974 495</td>
+            </tr>
+            <tr>
+                <td class="estado">Amazonas
+                    <td class="população">3 941 175</td>
+            </tr>
+            <tr>
+                <td class="estado">Espírito Santo
+                    <td class="população">3 833 486</td>
+            </tr>
+            <tr>
+                <td class="estado">Mato Grosso
+                    <td class="população">3 658 813</td>
+            </tr>
+            <tr>
+                <td class="estado">Rio Grande do Norte
+                    <td class="população">3 302 406</td>
+            </tr>
+            <tr>
+                <td class="estado">Piauí
+                    <td class="população">3 269 200</td>
+            </tr>
+            <tr>
+                <td class="estado">Alagoas
+                    <td class="população">3 127 511</td>
+            </tr>
+            <tr>
+                <td class="estado">Distrito Federal
+                    <td class="população">2 817 068</td>
+            </tr>
+            <tr>
+                <td class="estado">Mato Grosso do Sul
+                    <td class="população">2 756 700</td>
+            </tr>
+            <tr>
+                <td class="estado">Sergipe
+                    <td class="população">2 209 558
+                </td>
+            </tr>
+            <tr>
+                <td class="estado">Rondônia
+                    <td class="população">1 581 016</td>
+            </tr>
+            <tr>
+                <td class="estado">Tocantins
+                    <td class="população">1 511 459</td>
+            </tr>
+            <tr>
+                <td class="estado">Acre
+                    <td class="população">830 026</td>
+            </tr>
+            <tr>
+                <td class="estado">Amapá
+                    <td class="população">733 508</td>
+            </tr>
+            <tr>
+                <td class="estado">Roraima
+                    <td class="população">636 303</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de Habitantes</th>
+            <td class="população">203 062 512</td>
+        </tfoot>
+    </table>
+</body>
+</html>
