@@ -8,10 +8,12 @@
 body, html{
     background-color: lightgray;
 }
-
+header{
+    background-color: gray;
+}
 header > h1{
     text-align: center;
-    background-color: gray;
+    
     padding: 10px;
 }
 span#burguer{
@@ -20,6 +22,7 @@ span#burguer{
     background-color: rgb(36, 36, 36);
     text-align: center;
     cursor: pointer;
+    box-shadow: 1px 1px 2px black;
 }
 span#burguer:hover{
     background-color: aliceblue;
@@ -47,6 +50,7 @@ main{
     padding: 10px;
     margin: auto;
     border-radius: 10px;
+    margin-top: 10px;
 }
 main > article > h2{
     padding: 10px;
